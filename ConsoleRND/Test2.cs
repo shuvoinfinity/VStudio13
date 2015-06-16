@@ -8,14 +8,24 @@ namespace ConsoleRND
 {
     class Test2
     {
-        public string Hi { get; set; }
-        public void Speak( string Name="X")
+        //public string Hi { get; set; }
+        //public void Speak( string Name="X")
+        //{
+        //    Console.WriteLine(Name);
+        //}
+        //public void Speak(int times=1, string Name = "X")
+        //{
+        //    Console.WriteLine(times + Name);
+        //}
+
+        static void Aaa()
         {
-            Console.WriteLine(Name);
+            Console.WriteLine("AAA");
         }
-        public void Speak(int times=1, string Name = "X")
+
+        public static void Bbb()
         {
-            Console.WriteLine(times + Name);
+            Console.WriteLine("BBB");
         }
     }
  
