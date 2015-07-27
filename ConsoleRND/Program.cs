@@ -6,6 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace ConsoleRND
 {
@@ -57,26 +58,16 @@ namespace ConsoleRND
             //for (i = 0; i < arr.Length; i++)
             //    Console.Write(arr[i] + "\t"); //after sorting
 
-            Test2.Bbb();
+            //FileStream fs1 = new FileStream("D:\\Yourfile.txt", FileMode.OpenOrCreate, FileAccess.Write);
+            //StreamWriter writer = new StreamWriter(fs1);
+            //writer.Write("Hello Welcome");
+            //writer.Close();
+            //FileStream fs2 = new FileStream("D:\\Yourfile.txt", FileMode.OpenOrCreate, FileAccess.Read);
+            //StreamReader reader = new StreamReader(fs2);
+            //Console.WriteLine(reader.ReadToEnd());
+            //reader.Close();
+            test3.CreatFile();
             Console.ReadKey();
         }
-
-        //private static void selectsort(int[] arr)
-        //{
-        //    for (int i = 0; i < arr.Length; i++)
-        //    {
-        //        int min = i;
-        //        for (int j= i+1; j < arr.Length; j++)
-        //        {
-        //            if (arr[j] < arr[min])
-        //            {
-        //                min = j;
-        //            }
-        //            int temp = arr[i];
-        //            arr[i] = arr[min];
-        //            arr[min] = temp;
-        //        }
-        //    }
-        //}
     }
 }
